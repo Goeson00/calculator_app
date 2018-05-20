@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Calculator</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/theme-dark.css">
+    </head>
+
+    <body class="page">
+        <div class="calculator calculator--theme--dark">
+            <div class="calculator__display calculator__display--theme--dark">
+                <p class="calculator__calculation calculator__calculation--theme--dark">
+                </p>
+                <div class="calculator__inner">
+                    <p class="calculator__result calculator__result--theme--dark">0</p>
+                    <div class="calculator__operation calculator__operation--theme--dark"></div>
+                </div>
+            </div>
+            
+            <div class="calculator__keyboard">
+                <div class="calculator__row">
+                    <button class="calculator__key calculator__key--fn--edit" data-action="clear">C</button>
+                    <button class="calculator__key calculator__key--fn--edit" data-action="inputNegation">+/-</button>
+                    <button class="calculator__key calculator__key--fn--edit" data-action="inputPercent">%</button>
+                    <button class="calculator__key calculator__key--fn--operation" value="divide" data-action="inputOperation">/</button>
+                </div>
+                <div class="calculator__row">
+                    <button class="calculator__key calculator__key--fn--primary" value="7" data-action="inputDigit">7</button>
+                    <button class="calculator__key calculator__key--fn--primary" value="8" data-action="inputDigit">8</button>
+                    <button class="calculator__key calculator__key--fn--primary" value="9" data-action="inputDigit">9</button>
+                    <button class="calculator__key calculator__key--fn--operation" value="multiply" data-action="inputOperation">x</button>
+                </div>
+                <div class="calculator__row">
+                    <button class="calculator__key calculator__key--fn--primary" value="4" data-action="inputDigit">4</button>
+                    <button class="calculator__key calculator__key--fn--primary" value="5" data-action="inputDigit">5</button>
+                    <button class="calculator__key calculator__key--fn--primary" value="6" data-action="inputDigit">6</button>
+                    <button class="calculator__key calculator__key--fn--operation" value="subtract" data-action="inputOperation">-</button>
+                </div>
+                <div class="calculator__row">
+                    <button class="calculator__key calculator__key--fn--primary" value="1" data-action="inputDigit">1</button>
+                    <button class="calculator__key calculator__key--fn--primary" value="2" data-action="inputDigit">2</button>
+                    <button class="calculator__key calculator__key--fn--primary" value="3" data-action="inputDigit">3</button>
+                    <button class="calculator__key calculator__key--fn--operation" value="add" data-action="inputOperation">+</button>
+                </div>
+                <div class="calculator__row">
+                    <button class="calculator__key calculator__key--fn--primary" value="00" data-action="inputDigit">00</button>
+                    <button class="calculator__key calculator__key--fn--primary" value="0" data-action="inputDigit">0</button>
+                    <button class="calculator__key calculator__key--fn--edit" value="." data-action="inputDecimalPoint">.</button>
+                    <button class="calculator__key calculator__key--fn--equal" value="calculate" data-action="equal">
+                        <span class="key__text">=</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/helpers.js"></script>
+        <script src="js/model.js"></script>
+        <script src="js/view.js"></script>
+        <script src="js/controller.js"></script>
+    </body>
+</html>
